@@ -1,0 +1,27 @@
+{
+  "name": "Sarbacane",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --hot --history-api-fallback --open",
+    "prog": "webpack --progress -p",
+    "test:win": "mocha --compilers js:babel-core/register tests/**/*.js"
+  },
+  "keywords": [],
+  "author": "Steeve ciminera",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^6.3.2",
+    "babel-plugin-import": "^1.4.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-latest": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
+  }
+}
