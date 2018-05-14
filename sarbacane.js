@@ -1,9 +1,6 @@
 /**
- * Created by Steve Ciminera on 12/05/2018.
+ * Created by Steeve Ciminera on 12/05/2018.
  */
-define('sarbacane', {
-
-});
 
 export class PetriDish {
 
@@ -239,15 +236,15 @@ export class PetriDish {
         });
         return i + "]";
     };
-};
+}
 
 
 export class Individual {
     genes = [];
 
-    constructor({genes}) {
-        if(Array.isArray(genes)){
-            this.setGenes(genes);
+    constructor(opt) {
+        if(Array.isArray(opt.genes)){
+            this.setGenes(opt.genes);
         }
     }
 
@@ -258,4 +255,4 @@ export class Individual {
     getGenomeSize() {
         return this.genes.length;
     }
-};
+}
