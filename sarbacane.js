@@ -1,11 +1,6 @@
 /**
- * Created by cimin on 12/05/2018.
+ * Created by Steve Ciminera on 12/05/2018.
  */
-
-
-//----------------------------------------------------------------------------------------------------------------------
-//----------------------------------------------------------------------------------------------------------------------
-//----------------------------------------------------------------------------------------------------------------------
 
 export class PetriDish {
 
@@ -77,6 +72,10 @@ export class PetriDish {
         this.chooseParent = fn;
     }
 
+    setPrintIndividualAdapter(fn){
+        this.printIndividual = fn;
+    }
+
     constructor(opt) {
         //const val ={...this,...opt};
         this.setStartingPopulationSize(opt.startingPopulationSize || this.startingPopulationSize);
@@ -94,6 +93,7 @@ export class PetriDish {
         this.setMutateAdapter(opt.mutate || this.mutate);
         this.setChooseParentAdapter(opt.chooseParent || this.chooseParent);
         this.setInitPopulationAdapter(opt.initPopulation || this.initPopulation);
+        this.setPrintIndividualAdapter(opt.printIndividual || this.printIndividual);
 
         return this;
     }
@@ -226,9 +226,16 @@ export class PetriDish {
             return 1;
         }
         return 0;
-    }
+    };
 
+    printIndividual = (individual) => {
+        let i = "[";
+        individual.genes.forEach((g) => {
+            i += g+',';
 
+        });
+        return i + "]";
+    };
 }
 
 
