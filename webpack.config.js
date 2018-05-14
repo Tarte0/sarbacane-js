@@ -9,10 +9,11 @@ module.exports = {
       './index'
     ]
   },
-  output: {
-    path: path.resolve(__dirname, './dist'),
-    filename: '[name].js'
-  },
+    output: {
+        path: path.resolve(__dirname, './dist'),
+        filename: '[name].js',
+        libraryTarget:'umd'
+    },
   module: {
     rules: [
       { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
