@@ -1,7 +1,7 @@
 import {PetriDish} from './sarbacane'
 
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789?,.;/:!*";
-const word = "Stev mange 6 choux par seconde";
+const word = "Stev";
 let petriD = new PetriDish({
     startingPopulationSize: 500,
     genomeSize: word.length,

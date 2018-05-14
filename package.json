@@ -1,15 +1,19 @@
 {
-  "name": "Sarbacane",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "sarbacane",
+  "version": "1.0.1",
+  "description": "Simple genetic algorithms library",
+  "main": "sarbacane.js",
   "scripts": {
     "dev": "webpack-dev-server --hot --history-api-fallback --open",
     "prog": "webpack --progress -p",
     "test:win": "mocha --compilers js:babel-core/register tests/**/*.js"
   },
-  "keywords": [],
-  "author": "Steeve ciminera",
+  "keywords": [
+    "genetic",
+    "sarbacane",
+    "algorithm"
+  ],
+  "author": "Steeve Ciminera",
   "dependencies": {
 
   },
@@ -23,5 +27,9 @@
     "babel-preset-stage-0": "^6.24.1",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.1"
-  }
+  },
+  "unpkg": "sarbacane.js",
+  "jsdelivr": "sarbacane.js",
+  "module": "index",
+  "jsnext:main": "index"
 }

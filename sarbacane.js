@@ -236,7 +236,7 @@ export class PetriDish {
         });
         return i + "]";
     };
-}
+};
 
 
 export class Individual {
@@ -255,4 +255,4 @@ export class Individual {
     getGenomeSize() {
         return this.genes.length;
     }
-}
+};
