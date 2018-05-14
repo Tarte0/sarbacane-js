@@ -6,17 +6,18 @@ module.exports = {
   entry: {
     'app': [
       'babel-polyfill',
-      './index'
+      './sarbacane'
     ]
   },
     output: {
         path: path.resolve(__dirname, './dist'),
         filename: '[name].js',
-        libraryTarget:'umd'
+        libraryTarget:'umd',
+        library: "true"
     },
   module: {
     rules: [
       { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
     ],
   }
-}
+};
