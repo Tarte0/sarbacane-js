@@ -3,7 +3,7 @@
     [
       "latest", {
         "es2015": {
-          "modules": 'umd'
+          "modules": false
         }
       }
     ],
