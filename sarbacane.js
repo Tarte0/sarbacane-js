@@ -1,6 +1,9 @@
 /**
  * Created by Steve Ciminera on 12/05/2018.
  */
+define('sarbacane', {
+
+});
 
 export class PetriDish {
 
