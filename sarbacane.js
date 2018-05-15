@@ -201,7 +201,7 @@ export class PetriDish {
         return this.population.length;
     };
 
-    getFitest=() => {
+    getFittest=() => {
         this.population.sort(this.compareFitness);
         return this.population[0];
     };
