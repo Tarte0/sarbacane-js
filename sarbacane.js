@@ -24,6 +24,10 @@ export class PetriDish {
         this.genomeSize = genomeSize;
     }
 
+    setGenerationNb(generationNb){
+        this.generationNb = generationNb;
+    }
+
     setWeakPercentage(weakPercentage) {
         this.weakPercentage = weakPercentage;
     }
@@ -81,6 +85,7 @@ export class PetriDish {
         this.setStartingPopulationSize(opt.startingPopulationSize || this.startingPopulationSize);
         this.setPopulation(opt.population || this.population);
         this.setGenomeSize(opt.genomeSize || this.genomeSize);
+        this.setGenerationNb(opt.generationNb || this.generationNb);
         this.setWeakPercentage(opt.weakPercentage || this.weakPercentage);
         this.setMutationRate(opt.mutationRate || this.mutationRate);
         this.setElitism(opt.elitism || this.elitism);
